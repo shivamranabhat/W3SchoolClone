@@ -1,0 +1,35 @@
+  <div class="row">
+                <div class="column one">
+                    <h1>PHP</h1>
+                    <p>A web server programming language</p>
+                    <button id="btn">Learn PHP</button>
+                </div>
+           </div>
+           <div class="row">
+            <div class="column two">
+                <h1>jQuery</h1>
+                <p>A JS library for developing web pages</p>
+                <button id="btn">Learn jQuery</button>
+            </div>
+           </div>
+              
+                <div class="column three">
+                    <h1>Java</h1>
+                    <p>A programming language</p>
+                    <button id="btn">Learn Java</button>
+                </div>
+                <div class="column four">
+                    <h1>C++</h1>
+                    <p>A programming language</p>
+                    <button id="btn">Learn C++</button>
+                </div>
+                <div class="column five">
+                    <h1>W3.CSS</h1>
+                    <p>A CSS framework for faster and better responsive web pages</p>
+                    <button id="btn">Learn W3.CSS</button>
+                </div>
+                <div class="column six">
+                    <h1>Bootstrap</h1>
+                    <p>A CSS framework for designing better web pages</p>
+                    <button id="btn">Learn Bootstrap</button>
+                </div>
