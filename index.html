@@ -7,18 +7,21 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="assests/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--Navigation design starts-->
   <section id="navigation">
-    <div class="logo"><img src="assests/image/logo.png" width="50" height="50" alt="logo"></div>
+    <div class="logo"><img src="assests/uploads/logo.png" width="50" height="50" alt="logo"></div>
     <nav class="nav-links left">
       <ul>
         <li><a href="#"><span id="menu">Menu<i class="fa-solid fa-caret-down"></i></span> </a></li>
         <li><a href="#" class="nav">Tutorials <i class="fa-solid fa-caret-down"></i></a></li>
         <li><a href="#" class="nav">References <i class="fa-solid fa-caret-down"></i></a></li>
         <li><a href="#" class="nav">Exercises <i class="fa-solid fa-caret-down"></i></a></li>
-        <li><a href="#" class="nav"> Videos</a></li>
-        <li><a href="#" class="nav">Pro <button id="btn">New</button></a></li>
+        <li><a href="#" class="nav vid"> Videos</a></li>
+        <li><a href="#" class="nav pro">Pro <button id="btn">New</button></a></li>
       </ul>
     </nav>
     <nav class="nav-links right">
@@ -26,45 +29,214 @@
         <li><a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
         <li><a href="#"><i class="fa-solid fa-earth-americas"></i></a></li>
         <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        <li><a href="#"><span id="web">Website <button id="btn">New</button></span></a></li>
+        <li><a href="#" title="Get your own Website With W3Schools Spaces"><span id="web">Website <button id="btn">New</button></span></a></li>
         <li><a href="#" class="paid">Paid Courses</a></li>
         <li><a href="#"><button id="btn-primary">Log in</button></a></li>
       </ul>     
     </nav>
-
   </section>
+  <!--Top Body design starts-->
   <section id="body">
     <div class="main-head">
      <h1>Learn to Code</h1>
       <h3>With the world's largest web developer site.</h3>
-      <div class="search">
-        <input  type="text" placeholder="Search our tutorials, e.g.HTML">
-        <button id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>      
+      <div class="search-container">
+        <input type="text" placeholder="Search our tutorials, e.g.HTML" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>     
       <h4>Not Sure Where To Begin?</h4>
     </div>
   </section>
   <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
     <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
   </svg>
-  <section id="body-2">
-
-  <!--/section>
+    <!--Top Body Design ends-->
+   <!--Section Body-2 Design starts-->
+   <section id="body-2">
+     <div class="left-content">
+       <h1>HTML</h1>
+       <p>The language for building web pages</p>
+       <a href="#" style="text-decoration: none;"><button id="btn-A">Learn HTML</button></a>
+       <a href="#" style="text-decoration: none;"><button id="btn-B">Video Tutorial <span class="ws-pink">New</span></button></a>
+       <a href="#" style="text-decoration: none;"><button id="btn-C">HTML Reference</button></a>  
+     </div>
+     <div class="right-content">
+       <h3>HTML Example:</h3>
+       <div class="white-space first">
+        <p>&lt<span style="color:brown">!DOCTYPE</span> <span style="color:red">html</span>&gt</p>
+        <p>&lt<span style="color:brown">html</span>&gt</p>
+        <p>&lt<span style="color:brown">title</span>&gt <span style="color: #000;">HTML Tutorial </span>&lt<span style="color:brown">/title</span>&gt</p>
+        <p>&lt<span style="color:brown">body</span>&gt</p> <br>
+        <p>&lt<span style="color:brown;">h1</span>&gt<span style="color: #000;">This is heading</span>&lt<span style="color:brown">/h1</span>&gt</p>
+        <p>&lt<span style="color:brown;">p</span>&gt<span style="color: #000;">This is paragraph.</span>&lt<span style="color:brown">/p</span>&gt</p><br>
+        <p>&lt<span style="color:brown">/body</span>&gt</p>
+        <p>&lt<span style="color:brown">/html</span>&gt</p>
+        </div>
+       <div class="btn-down">
+         <a href="#">
+           <button id="btn-down">Try it Yourself</button>
+         </a>
+       </div>
+     </div>
+   </section>
+    <!--Section Body-2 Design ends-->
+    <!--Section Body-3 Design starts-->
+    <section id="body-2" style="background-color: #FFF4A3;">
+      <div class="left-content">
+        <h1>CSS</h1>
+        <p>The language for styling web pages</p>
+        <a href="#" style="text-decoration: none;"><button id="btn-A">Learn CSS</button></a>
+        <a href="#" style="text-decoration: none;"><button id="btn-C">CSS Reference</button></a>  
+      </div>
+      <div class="right-content">
+        <h3>CSS Example:</h3>
+        <div class="white-space second">
+         <p>body<span style="color:#000">&nbsp;{<br></span><span style="color:red">&nbsp;&nbsp;background-color:</span><span style="color:mediumblue;">&nbsp;&nbsp;lightblue;</span></p>
+         <p><span style="color:#000">}</p><br>
+         <p>h1<span style="color: #000;">&nbsp;{</span></p>
+         <p><span style="color:red;">&nbsp;&nbsp;color:</span><span style="color: mediumblue;">&nbsp;&nbsp;white</span><span style="color:#000">;</span></p>
+         <p><span style="color:red">&nbsp;&nbsp;text-align:</span><span style="color:mediumblue;">&nbsp;&nbsp;center</span><span style="color:#000">;</span></p>
+         <p><span style="color:#000">}</span></p>
+         </div>
+        <div class="btn-down">
+          <a href="#">
+            <button id="btn-down">Try it Yourself</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Section Body-3 Design ends-->
+    <!--Section Body-4 Design starts-->
+    <section id="body-2" style="background-color:#282A35;">
+      <div class="left-content black">
+        <h1>JavaScript</h1>
+        <p>The language for programming web pages</p>
+        <a href="#" style="text-decoration: none;"><button id="btn-A">Learn JavaScript</button></a>
+        <a href="#" style="text-decoration: none;"><button id="btn-B">JavaScript Reference</button></a>  
+      </div>
+      <div class="right-content">
+        <h3>JavaScript Example:</h3>
+        <div class="white-space second">
+         <p>body<span style="color:#000">&nbsp;{<br></span><span style="color:red">&nbsp;&nbsp;background-color:</span><span style="color:mediumblue;">&nbsp;&nbsp;lightblue;</span></p>
+         <p><span style="color:#000">}</p><br>
+         <p>h1<span style="color: #000;">&nbsp;{</span></p>
+         <p><span style="color:red;">&nbsp;&nbsp;color:</span><span style="color: mediumblue;">&nbsp;&nbsp;white</span><span style="color:#000">;</span></p>
+         <p><span style="color:red">&nbsp;&nbsp;text-align:</span><span style="color:mediumblue;">&nbsp;&nbsp;center</span><span style="color:#000">;</span></p>
+         <p><span style="color:#000">}</span></p>
+        </div>
+        <div class="btn-down">
+          <a href="#">
+            <button id="btn-down">Try it Yourself</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Section Body-4 Design ends-->
+        <!--Section Body-5 Design starts-->
+        <section id="body-2" style="background-color:#F3ECEA;">
+          <div class="left-content grey">
+            <h1>Python</h1>
+            <p>A popular programming language</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn Python</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-C">Pyhton Reference</button></a>  
+          </div>
+          <div class="right-content">
+            <h3>Python Example:</h3>
+            <div class="white-space second">
+             <p style="color: mediumblue;">if <span style="color: red;">5&nbsp;&nbsp;<span style="color:#000;">></span>&nbsp;&nbsp;2</span><span style="color:#000;">:</span></p>
+             <p style="color: #000;">&nbsp;&nbsp;print(<span style="color: brown;">"Five is greater than two!"</span>)</p> <br><br><br><br><br><br><br><br>
+            </div>
+            <div class="btn-down">
+              <a href="#">
+                <button id="btn-down">Try it Yourself</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--Section Body-5 Design ends-->
+        <!--Section Body-6 Design starts-->
+        <section id="body-2" style="background-color:#96D4D4">
+          <div class="left-content grey">
+            <h1>SQL</h1>
+            <p>A language for accessing databases</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn SQL</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-C">SQL Reference</button></a>  
+          </div>
+          <div class="right-content">
+            <h3>SQL Example:</h3>
+            <div class="white-space second">
+             <p style="color:mediumblue;">SELECT&nbsp;<span style="color:#000;">*</span>&nbsp;&nbsp;FROM <span style="color:#000;">Customers</span></p>
+             <p style="color:#000;"><span style="color:mediumblue;">WHERE &nbsp;&nbsp;</span>Country= <span style="color:brown">'Mexico'</span>&nbsp;;</p><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="btn-down">
+              <a href="#">
+                <button id="btn-down">Try it Yourself</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--Section Body-6 Design ends-->
+        
+<!--Section Languages Design starts-->
     <section id="language">
-          <div class="row">
-              <div class="col one">
-                <h1>PHP</h1>
-                <p>A web server programming language</p>
-                <button id="btn">Learn PHP</button>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col two">
-                <h1>jQuery</h1>
-                <p>A JS library for developing web pages</p>
-                <button id="btn">Learn jQuery</button>
-              </div>
-          </div>
-    </section>-->
+      <div class="row">
+        <div class="col one">
+          <h2>PHP</h2>
+          <h5>A web server programming language</h5>
+          <button class="btn">Learn PHP</button>
+        </div>
+        <div class="col two">
+          <h2>jQuery</h2>
+          <h5>A JS library for developing web pages</h5>
+          <button class="btn">Learn jQuery</button>
+        </div>
+        <div class="col three">
+          <h2>Java</h2>
+          <h5>A programming language</h5>
+          <button class="btn">Learn Java</button>
+        </div>
+        <div class="col four">
+          <h2>C++</h2>
+          <h5>A programming language</h5>
+          <button class="btn">Learn C++</button>
+        </div>
+        <div class="col five">
+          <h2>W3.CSS</h2>
+          <h5>A CSS framework for faster & better responsive web pages</h5>
+          <button class="btn">Learn W3.CSS</button>
+        </div>
+        <div class="col six">
+          <h2>Bootstrap</h2>
+          <h5>A CSS framework for designing better web pages</h5>
+          <button class="btn">Learn Bootstrap</button>
+        </div>
+        <div class="column pink">
+          <h2>C</h3>
+        </div>
+        <div class="column yellow">
+          <h2>C#</h3>
+        </div>
+      </div>
+    </section>
+    <!--Section Languages Design ends-->
+    <!--Section ColorDesign starts-->
+    <section id="color">
+      <h2>Color Picker</h2>
+      <h4>W3Schools's famous color picker</h4>
+      <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_self">
+        <img src="assests/uploads/colorpicker.png" style="width:150px; height:128px; margin-top: 16px;" alt="color picker">
+      </a>   
+    </section>
+    <!--Section ColorDesign ends-->
+    <!--Section code game starts-->
+    <section id="codegame">
+      <h1>Code Game</h1>
+      <h2>Help the Lynx to collect pine cones!</h2>
+      <a href="#">
+        <img src="assests/uploads/w3lynx_200.png" style="margin-bottom: 50px;" alt="codegame image">
+      </a>
+      <a href="https://www.w3schools.com/codegame/index.html"><button id="btn-game">Play Game</button></a>     
+    </section>
+    <!--Section code game ends-->
 </body>
 </html>
