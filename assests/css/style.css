@@ -288,7 +288,15 @@ html,body{
     background-color: #058e5c;
 }
 /*Body-2 design ends*/
-/*Body-2 black design starts*/
+/*Same height for body section design starts*/
+#body-3, #body-4,#body-5,#body-6{
+    height: auto;
+    position:relative;
+    top:-5px;
+    display: flex;
+}
+/*Same height for body section design ends*/
+/*Body-4  design starts*/
  .black h1, .black p{
     color: #fff;
 }
@@ -301,7 +309,7 @@ html,body{
 .second p{
     color: brown;
 }
-/*Body-3 design ends*/
+/*Body-4 design ends*/
 /*Section language design starts*/
 #language{
     background-color: #282A35;
