@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    
 }
 html,body{
     width:100%;
@@ -70,7 +71,7 @@ html,body{
     border-radius:20px;
 }
 .right .paid{
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius:25px;
 }
 .right .paid:hover{
@@ -88,6 +89,9 @@ html,body{
 }
 #btn-primary:hover{
     background-color: #058e5c;
+}
+.right-content ,.fa-circle-half-stroke:hover, .fa-earth-americas:hover, .fa-magnifying-glass:hover{
+    color: #04AA6D;
 }
 .right li #web:hover{
     color: #fff;
@@ -302,7 +306,8 @@ html,body{
 #language{
     background-color: #282A35;
     width: 100%;
-    height:400vh;
+    display: flex;
+    height: auto;
     position: relative;
     top:-10px;
     padding: 130px 150px;
@@ -355,13 +360,13 @@ html,body{
 .col .btn:hover{
     background-color: #000;
 }
-.column{
+.column-top{
     float: left;
     width: 45%;
-    height: 18vh;
+    height: 16vh;
     text-align: center;
     border-radius: 10px;
-    margin: 80px 40px 0 0;
+    margin: 0 40px 40px 12px;
     cursor: pointer;
 }
 .pink{
@@ -370,11 +375,42 @@ html,body{
 .yellow{
     background-color: #FFF4A3!important;
 }
-.column h2{
+.column-top h5, .column-bottom h5{
     font-size: 30px;
-    font-weight: 500px;
+    font-weight: 600;
+    margin-top: 40px;
 }
-/*Body-3 design ends*/
+
+.column-bottom{
+    float: left;
+    width: 45%;
+    height: 14vh;
+    text-align: center;
+    border-radius: 8px;
+    margin: 40px 40px 0 12px;
+    cursor: pointer;
+}
+
+.excel{
+    background-color: #96D4D4!important;
+}
+.sheet{
+    background-color: #FFF4A3!important;
+}
+.machine{
+    background-color: #FFC0C7!important;
+}
+.ai{
+    background-color: #F3ECEA!important;
+}
+.statistics{
+    background-color: rgb(243, 236, 234) !important
+}
+.data{
+    background-color: rgb(217, 238, 225) !important;
+    margin-bottom: 100px;
+}
+/*Section language design ends*/
 /*Section color design starts*/
 #color{
     height:auto;
@@ -433,7 +469,7 @@ html,body{
 /*Section codegame design ends*/
 /*Responsive design starts*/
 @media (max-width:1310px){
-    .nav-links li .pro, .vid, .menu{
+    .nav-links li .menu, #btn{
         display: none;
     }
     .nav-links li .paid{
@@ -449,13 +485,12 @@ html,body{
     }
     .search-container input[type=text] {
         width:40%;     
-    }
-    
+    }   
     .col{
         width: 100%;
         height: auto;
     }
-    .column{
+    .column-top, .column-bottom{
         width: 100%;
     }
     .right-content {
@@ -465,6 +500,9 @@ html,body{
    
 }
 @media (max-width:1100px){
+    .nav-links li .vid, .pro{
+        display: none;
+    }
     .search-container{
         position: relative;
         left:25%;
@@ -491,12 +529,19 @@ html,body{
     .white-space{
         width:95%;
     }
+    .column{
+        width:100%;
+    }
     
 }
 
 @media (max-width:900px){
-    .nav-links li #web, .paid{
+    .nav-links li #web, .tutorials, .references, .exercises{
         display: none;
+    }
+    .nav-links li #menu{
+        display: inline;
+        margin-left: 30px;
     }
     .search-container{
         position: relative;
@@ -532,8 +577,14 @@ html,body{
     .right-content{
         display: none;
     }
+    .column-top, .column-bottom{
+        width:100%;
+    }
 }
 @media (max-width:480px){
+    .right .fa-earth-americas, .right .fa-magnifying-glass{
+        display: none;
+    }
     .main-head h1{
         font-size: 50px;
     }
@@ -557,12 +608,12 @@ html,body{
     .left-content h1{
         font-size: 60px;
     }
+    .column-top h5, .column-bottom h5{
+        font-size: 25px;
+    }
     
 }
 @media (max-width:400px){
-    .right .fa-earth-americas, .right .fa-magnifying-glass{
-        display: none;
-    }
     #menu{
         margin-right: -25px;
     }
@@ -572,6 +623,9 @@ html,body{
     }
     .left-content h1{
         font-size: 40px;
+    }
+    .column-top h5, .column-top h5{
+        font-size: 20px;
     }
 }
 
